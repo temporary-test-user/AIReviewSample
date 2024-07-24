@@ -18,13 +18,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // 単語の誤字（英語、日本語、略語）
-        let testString1 = "テスト"
-        let testStrung2 = "テスt"
-        let tetString3 = "テスト"
+        let testStr1 = "テスト"
+        let testSrt2 = "テスt"
+        let testString3 = "テスト"
         
-        label1.text = testString1
-        Label2.text = testStrung2
-        label3.text = tetString3
+        label1.text = testStr1
+        Label2.text = testSrt2
+        label3.text = testString3
     }
 
 
