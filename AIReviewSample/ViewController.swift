@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet private weak var Label2: UILabel!
     @IBOutlet private weak var label3: UILabel!
     @IBOutlet private weak var label4: UILabel!
+    
+    public var valueC: Int?
+    private var valueD: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +30,13 @@ class ViewController: UIViewController {
         label3.text = testString3
     }
 
-
+    // 1つの関数に複数の役割
+    // 不使用の関数
+    private func sumValue(vulA: Int, valB: Int, valC: Int) -> Int {
+        valueC = valC - vulA
+        
+        let sum = vulA + valB
+        return sum
+    }
 }
 
