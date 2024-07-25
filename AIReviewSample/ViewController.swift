@@ -28,8 +28,23 @@ class ViewController: UIViewController {
         label1.text = testStr1
         Label2.text = testSrt2
         label3.text = testString3
+        
+        label4.text = String(valueC!)
+        valueD = sumValue(vulA: 1, valB: 2, valC: 3)
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        valueD = nil
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        label1.text = String(valueD!)
+    }
+    
     // 1つの関数に複数の役割
     // 不使用の関数
     private func sumValue(vulA: Int, valB: Int, valC: Int) -> Int {
